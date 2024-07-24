@@ -17,11 +17,11 @@ module.exports = {
   networks: {
     hardhat: {
       forking: {
-        url: "https://open-campus-codex-sepolia.drpc.org",
+        url: "https://rpc.open-campus-codex.gelato.digital",
       }
     },
     edutest: {
-      url: "https://open-campus-codex-sepolia.drpc.org",
+      url: "https://rpc.open-campus-codex.gelato.digital",
     },
   }
 };
