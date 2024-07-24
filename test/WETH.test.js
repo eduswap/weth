@@ -5,9 +5,9 @@ describe("WETH contract", function () {
     let owner;
 
     beforeEach(async function () {
-        const WETH = await ethers.getContractFactory("WETH");
         [owner] = await ethers.getSigners();
-        weth = await WETH.deploy();
+        weth = await ethers.deployContract("WETH", [], {});
+        await weth.waitForDeployment();
     });
 
     describe("Deployment", function () {
